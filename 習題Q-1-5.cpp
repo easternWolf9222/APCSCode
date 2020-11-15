@@ -29,6 +29,6 @@ int main() {
     cin >> a >> n;
     p = 0;
     cout << count(n) << endl;
-    
+   
     return 0;
 }
