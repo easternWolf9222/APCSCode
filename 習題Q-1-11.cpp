@@ -32,7 +32,7 @@ void r(int U, int D, int L, int R, int cost){
             r(U, D-1, L, R, cost + sum);
         else
             r(U, D-1, L, R, cost + (R - L + 1) - sum);
-        
+       
         //去掉左
         sum = 0;
         for(int k = U ; k <= D ; k++)
