@@ -28,7 +28,7 @@ int main() {
         for(int j = 0 ; j < len ; j++)
             newForm[i] = newForm[i] | 1<<(input[i][j] - 'A');
     }
-    
+   
     sort(newForm, newForm+n);
     
     for(int i = 0 ; i < n ; i++){
