@@ -1,5 +1,3 @@
-//快速計算費式數列第 n 項
-
 #include <iostream>
 #include <iomanip>
 #include <math.h>
