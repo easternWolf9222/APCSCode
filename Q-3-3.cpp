@@ -49,6 +49,6 @@ int main(){
         }
     }
     cout << num.front() << endl;
-
+    
     return 0;
 }
