@@ -47,7 +47,7 @@ int main() {
             cout << "yes\n";
         else
             cout << "no\n";
-
+        
         while(!s.empty())
             s.pop();
     }
