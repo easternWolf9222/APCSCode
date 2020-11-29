@@ -2,7 +2,6 @@
 using namespace std;
 
 
-
 int main(){
     int n, k, tmp, maxi = -1, cnt = 0;
     int a[200010];
