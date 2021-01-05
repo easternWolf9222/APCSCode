@@ -19,8 +19,8 @@ int ctoi(char a){
 
 
 int f(int s, int code){
-//    if(dp[s][code] != -1)
-//        return dp[s][code];
+    if(dp[s][code] != -1)
+        return dp[s][code];
 
     int t, sum = 0;
     for(int v : child[s]){
@@ -35,7 +35,7 @@ int f(int s, int code){
         }
         sum += t;
     }
-    //dp[s][code] = sum;
+    dp[s][code] = sum;
     return sum;
 }
 
@@ -55,10 +55,10 @@ int main(){
 
 
     for(x = 0 ; x < m ; x++){
-//        for(int i = 1 ; i <= n ; i++){
-//            for(int j = 0 ; j <= 3 ; j++)
-//                dp[i][j] = -1;
-//        }
+        for(int i = 1 ; i <= n ; i++){
+            for(int j = 0 ; j <= 3 ; j++)
+                dp[i][j] = -1;
+        }
         if(seq[1][x] == '@')
             ans += min(f(1,0),min(f(1,1),min(f(1,2),f(1,3))));
         else
