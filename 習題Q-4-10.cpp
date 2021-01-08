@@ -33,7 +33,7 @@ int main(){
         pos--;
     }else{
         while(step > 0){
-            if(pos + step <= sum && f(pos + step) > m)
+            while(pos + step <= sum && f(pos + step) > m)
                 pos += step;
             step /= 2;
         }
